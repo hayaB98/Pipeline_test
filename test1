@@ -24,9 +24,6 @@ pipeline {
 			echo "Hello"
                         }
         }
-	stage('Four'){
-	sh "build 'test'"
-	}
       
     }
 }
