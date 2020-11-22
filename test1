@@ -24,6 +24,9 @@ pipeline {
 			echo "Hello"
                         }
         }
+	stage('Four'){
+	build "test"
+	}
       
     }
 }
