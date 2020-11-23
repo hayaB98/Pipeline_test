@@ -25,6 +25,15 @@ pipeline {
 			echo "Hello"
                         }
         }
+	stage('Four') {
+	   agent {
+                 docker { image 'node:14-alpine' }
+                 }
+	   steps {
+                sh 'node --version'
+            }
+	
+	}
       
     }
 }
